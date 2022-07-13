@@ -5,16 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
     <title>My website</title>
 </head>
 <body>
+    <!--Header section-->
+    <div id="header">
+        <div class="header container">
+           <div class="nav-bar">
+            <div class="brand">
+               <a href="#hero"><h1><span>M</span>ithun <span>Y</span>adav</h1></a> 
+            </div>
+            <div class="nav-list">
+                <div class="hamburger"><div class="bar"></div></div>
+                <ul class="">
+                    <li><a href="#hero" data-after="Home">Home</a></li>
+                    <li><a href="#services" data-after="Services">Services</a></li>
+                    <li><a href="#projects" data-after="Projects">Projects</a></li>
+                    <li><a href="#about" data-after="About">About</a></li>
+                    <li><a href="#contact" data-after="Contact">Contact</a></li>
+                </ul>
+            </div>
+           </div> 
+        </div>
+    </div>
+    <!--End of header section-->
     <!--Hero Section-->
     <section id="hero">
         <div class="hero container">
             <h1>Hello,<span></span></h1>
             <h1>My name is<span></span></h1>
             <h1>MITHUN<span></span></h1>
-            <a href="#" type="button" class="cta">Portfolio</a>
+            <a href="#projects" type="button" class="cta">Portfolio</a>
         </div>
     </section>
     <!-- End of hero section -->
@@ -120,7 +142,7 @@
                 </div>
             </div>
             <div class="col-right">
-                <h1 class="section-title">About<span>me</span></h1>
+                <h1 class="section-title">About<span> me</span></h1>
                 <h2>Front End Developer</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero esse molestias tempora deserunt quis ab quia autem? Eius placeat assumenda nihil quos, dolor modi, ad illum magni similique, ipsam quis ipsum facere. Eius, porro repellat. Quia ipsam, minima at laborum iste laudantium earum? Provident dolore culpa quos odio ut rem.</p>
                 <a href="#" class="cta">Download Resume</a>
@@ -131,8 +153,8 @@
     <!--contact Section-->
     <section id="contact">
         <div class="contact container">
-            <div>
-                <h1 class="section-title">Contact<span>info</span></h1>
+            <div class="contact-header">
+                <h1 class="section-title">Contact<span> info</span></h1>
             </div>
             <div class="contact-items tab-section">
                 <div class="contact-item">
@@ -165,7 +187,7 @@
         <!--Footer sectio-->
         <section id="footer">
             <div class="footer container">
-                <div class="brand"><h1><span>M</span>ithun<span> Y</span>adav</h1></div>
+                <div class="brand"><h1><span>M</span>ithun <span> Y</span>adav</h1></div>
                 <h2>Your complete WEB solution</h2>
                 <div class="social-icon">
                     <div class="social-item">
