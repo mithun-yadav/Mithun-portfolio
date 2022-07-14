@@ -47,8 +47,8 @@ p{
     transition: .3s ease background-color;
 }
 .cta:hover{
+    background-color:crimson;
     color:white;
-     background-color:crimson ;
 }
 .brand h1{
     font-size:3rem;
@@ -418,10 +418,13 @@ p{
     margin-bottom:10px;
 }
 #about .col-right .cta{
-    color:black;
+    color:crimson;
     margin-bottom: 50px;
     padding:10px 20px;
     font-size: 2rem;
+}
+#about .col-right .cta:hover{
+    color:white;
 }
 #about .col-left .about-img{
     height:100%;
