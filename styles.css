@@ -633,6 +633,12 @@ p{
        max-width: 20vh;
        margin: 0 auto;
 }
+#contact .contact-header .section-title{
+    display: flex;
+}
+#contact .contact-header .section-title span{
+    padding-left: 13px;
+}
 #contact .contact-items{
     width:100%;
     display:flex;
