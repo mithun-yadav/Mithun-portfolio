@@ -37,9 +37,9 @@ p{
 .cta{
     display:inline-block;
     padding:10px 30px;
-    color:crimson;
+    color:#4869E1;
     background-color: transparent;
-    border:2px solid crimson;
+    border:2px solid #4869E1;
     font-size:2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -47,16 +47,16 @@ p{
     transition: .3s ease background-color;
 }
 .cta:hover{
-    background-color:crimson;
-    color:white;
+    background-color:#4869E1;
+    color:#FFC0A1;
 }
 .brand h1{
     font-size:3rem;
     text-transform: uppercase;
-    color:white;
+    color:#FFC0A1;
 }
 .brand h1 span{
-    color:crimson;
+    color:#4869E1;
 }
 /*End of common styles*/
 .section-title{
@@ -69,7 +69,7 @@ p{
     text-align:center;
 }
 .section-title span{
-    color:crimson;
+    color:#4869E1;
 }
 /*Header section*/
 #header{
@@ -118,7 +118,7 @@ p{
     font-weight: 500;
     letter-spacing: .2rem;
     text-decoration: none;
-    color: white;
+    color: #FFC0A1;
     text-transform: uppercase;
     padding: 20px;
     display: block;
@@ -140,13 +140,13 @@ p{
     letter-spacing: initial;
 }
 #header .nav-list ul li:hover a{
-    color:crimson;
+    color:#4869E1;
 }
 #header .hamburger {
     height:60px;
     width:60px;
     display: inline-block;
-    border: 3px solid white;
+    border: 3px solid #FFC0A1;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -163,7 +163,7 @@ p{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid #FFC0A1;
     animation:hamburger_plus 1s ease infinite;
 }
 
@@ -171,7 +171,7 @@ p{
     height:2px;
     width: 30px;
     position: relative;
-    background-color: white;
+    background-color: #FFC0A1;
     z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -181,7 +181,7 @@ p{
     width: 100%;
     height: 100%;
     left: 0;
-    background-color: white;
+    background-color: #FFC0A1;
     transition: .3s ease;
     transition-property: top, bottom;
 }
@@ -200,11 +200,12 @@ p{
 /*End Header section*/
 /* hero section */
 #hero{
-    background-image: url(./img/hero-bg.png);
+    background-image: url(./img/christopher-gower-m_HRfLhgABo-unsplash.jpg);
     background-size: cover;
-    background-position:top center;
+    background-position:center;
     position:relative;
     z-index:1;
+    
 }
 #hero::after{
     content: "";
@@ -213,7 +214,7 @@ p{
     top:0;
     height:100%;
     width:100%;
-    background-color: black;
+    background-color: #000;
     opacity:.7;
     z-index:-1;
 }
@@ -248,14 +249,30 @@ p{
     left:0;
     height:100%;
     width:0%;
-    background-color:crimson ;
+    background-color:#4869E1 ;
     animation:text_reveal_box 1s ease;
     animation-delay:1s;
 }
 #hero h1:nth-child(1) span{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0%;
+    background-color:#FFC0A1 ;
+    animation:text_reveal_box 1s ease;
+    animation-delay:1s;
     animation-delay: .5s;
 }
 #hero h1:nth-child(2) span{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0%;
+    background-color:#FFC0A1 ;
+    animation:text_reveal_box 1s ease;
+    animation-delay:1s;
     animation-delay: 1.5s;
 }
 #hero h1:nth-child(3) span{
@@ -264,6 +281,7 @@ p{
 /* End hero section */
 #services{
     text-align: center;
+    margin-top: 6rem;
 }
 #services .services{
     /* flex-direction:column; */
@@ -319,13 +337,17 @@ p{
 }
 #services .service-item h2{
     font-size: 2rem;
-    color:white;
-    margin-bottom: 10px;
+    color:#FFC0A1;
     text-transform: uppercase;
+    text-align:left;
 }
 #services .service-item p{
-    color:white;
+    color:#FFC0A1;
     text-align: left;
+}
+#services .service-item a{
+    color:#4869E1;
+    text-decoration: underline;
 }
 #projects .projects{
     flex-direction:column;
@@ -361,7 +383,7 @@ p{
     justify-content: center;
     flex-direction: column;
     background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-    color:white;
+    color:#FFC0A1;
 }
 #projects .project-info h1{
     font-size: 4rem;
@@ -373,7 +395,7 @@ p{
     margin-top: 10px;
 }
 #projects .project-info p {
-    color:white;
+    color:#FFC0A1;
 }
 #projects .project-img {
     /* background-color: aqua; */
@@ -390,7 +412,7 @@ p{
     height:100%;
     width:100%;
     background-image:linear-gradient(60deg,#29323c 0%,#485563 100%);
-    opacity:0.7;
+    opacity:0.4;
 }
 #projects .project-img img{
     transition: .3s ease transform;
@@ -399,17 +421,27 @@ p{
     background-color: red;
     transform: scale(1.1);
 }
+#projects a{
+    color:#4869E1;
+    text-decoration: underline;
+}
 /*About Section*/
+#about {
+    margin-bottom: -158px;
+}
 #about .about {
     flex-direction: column-reverse;
-    text-align:center;
-    max-width:1200px;
-    margin:0 auto;
-    padding:100px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
 }
 #about .col-left{
     width:250px;
     height:360px;
+}
+#about .col-right{
+    margin-top: -90px;
 }
 #about .col-right h2{
     font-size:1.8rem;
@@ -418,19 +450,25 @@ p{
     margin-bottom:10px;
 }
 #about .col-right .cta{
-    color:crimson;
+    color:#4869E1;
     margin-bottom: 50px;
     padding:10px 20px;
     font-size: 2rem;
 }
 #about .col-right .cta:hover{
-    color:white;
+    color:#FFC0A1;
 }
 #about .col-left .about-img{
-    height:100%;
+    /* height:100%; */
     width:100%;
     position:relative;
-    border:10px solid white;
+    border:10px solid #FFC0A1;
+}
+.col-left .about-img {
+    height: 52%;
+    width: 114%;
+    position: relative;
+    border: 10px solid #FFC0A1;
 }
 #about .col-left .about-img::after{
     content:"";
@@ -439,7 +477,7 @@ p{
     top:19px;
     height:98%;
     width:98%;
-    border:7px solid crimson;
+    border:7px solid #4869E1;
     z-index:-1;
 }
 /*End of about section*/
@@ -500,7 +538,7 @@ p{
     padding-bottom: 10px;
 }
 #footer h2{
-    color:white;
+    color:#FFC0A1;
     font-weight: 500;
     font-size:1.8rem;
     letter-spacing: .1rem;
@@ -524,7 +562,7 @@ p{
     filter:grayscale(0)
 }
 #footer p{
-    color:white;
+    color:#FFC0A1;
     font-size: 1.3rem;
 }
 /*End of Footer*/
@@ -551,12 +589,12 @@ p{
 }
 @keyframes text_reveal{
     100%{
-        color:white;
+        color:#FFC0A1;
     }
 }
 @keyframes text_reveal_name{
     100%{
-        color:crimson;
+        color:#4869E1;
         font-weight:500px;
     }
 }
@@ -614,7 +652,7 @@ p{
         top:34px;
         height:98%;
         width:98%;
-        border: 10px solid crimson;
+        border: 10px solid #4869E1;
     }
     #about .col-right{
         text-align: left;
