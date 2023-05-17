@@ -154,8 +154,8 @@ p{
     justify-content: center;
     z-index: 100;
     cursor: pointer;
-    transform: scale(.7);/*Changed*/
-    margin-right:10px;/*doubt*/
+    transform: scale(.7);
+    margin-right:10px;
 }
 #header .hamburger:after{
     position: absolute;
@@ -279,6 +279,7 @@ p{
     animation-delay: 2.5s;
 }
 /* End hero section */
+/*Service section start also called to be certificates section */
 #services{
     text-align: center;
     margin-top: 6rem;
@@ -600,6 +601,14 @@ p{
 }
 /*End of keyframes*/
 /*Media query for tablet*/
+@media (max-width: 500px) {
+    #hero .hero h1{
+        font-size:2rem;
+    }
+    #header a h1{
+        font-size:2rem;
+    }
+}
 @media only screen and (min-width:768px){
     .cta{
         font-size:2.5rem;
