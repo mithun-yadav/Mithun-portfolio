@@ -491,7 +491,7 @@ p{
 }
 /*Included by my own*/
 .contact-header{
-    margin-right: 8%;
+    margin-right: 8% auto;
 }
 #contact .contact-items{
     width:100%;
@@ -629,6 +629,9 @@ p{
     }
     #contact .contact{
         margin: 0 5%;
+    }
+    .contact-header{
+        text-align: center;
     }
 }
 @media only screen and (min-width:768px){
