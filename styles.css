@@ -157,7 +157,7 @@ p{
     transform: scale(.7);
     margin-right:10px;
 }
-#header .hamburger:after{
+#header .hamburger::after{
     position: absolute;
     content: "";
     height: 100%;
@@ -601,7 +601,7 @@ p{
 }
 /*End of keyframes*/
 /*Media query for tablet*/
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     #hero .hero h1{
         font-size:2rem;
     }
@@ -614,12 +614,21 @@ p{
     #contact .contact {
         flex-direction: column;
         max-width: 1200px;
-        margin: 0 4%;
+        /* margin: 2%; */
         width: 90%;
     }
     .section-title{
-        margin-top:20%;
-        margin-left: 10%;
+        margin-top:5%;
+        text-align: center;
+    }
+    .contact-items{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items:center;
+    }
+    #contact .contact{
+        margin: 0 5%;
     }
 }
 @media only screen and (min-width:768px){
@@ -724,7 +733,15 @@ p{
 #contact .contact-item .contact-info {
     width: 100%;
     text-align: left;
-    padding-left:20px;
+    padding-left:20px; 
+}
+#contact .contact-item .contact-info h2{
+    /* display:inline-block; */
+    word-break:break-all;
+}
+#contact .contact-item{
+   margin:0 10%;
+    
 }
 
 /*End of contact section*/
